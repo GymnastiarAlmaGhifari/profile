@@ -1,24 +1,27 @@
-import React from "react";
-import Skill from "./component/master/Skill";
-import Navbar from "./component/master/Navbar";
-import About from "./component/master/About";
-import Hero from "./component/master/Hero";
-import Project from "./component/master/Project";
-import Contact from "./component/master/Contact";
-import Footer from "./component/master/Footer";
+import Navbar from "./components/master/Navbar";
+import Hero from "./components/master/Hero";
+import Skill from "./components/master/Skill";
+import About from "./components/master/About";
+import Project from "./components/master/Project";
+import Contact from "./components/master/Contact";
+import Footer from "./components/master/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-red-400">React 18 Alpha</h1>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skill />
-      <Project />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary text-white font-poppins">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Skill />
+        <Project />
+        <Contact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 
