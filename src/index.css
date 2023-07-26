@@ -108,15 +108,15 @@
 }
 
 /* animate-spin-slow */
-.animate-spin-slow {
+/* .animate-spin-slow {
   animation: spin 5s linear infinite;
-}
+} */
 
 /* animate spin slow tidak searah jarumjam */
 
-.animate-spin-slow-ccw {
+/* .animate-spin-slow-ccw {
   animation: spin-ccw 7s linear infinite;
-}
+} */
 
 @keyframes spin-ccw {
   0% {

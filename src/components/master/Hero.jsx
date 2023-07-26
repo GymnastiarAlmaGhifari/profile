@@ -9,6 +9,7 @@ import LaptopCanvas from "../canvas/Laptop";
 import { hand, tangan, tangan2 } from "../../assets";
 import { useEffect, useState } from "react";
 import ContactMe from "../common/ContactMe";
+import { fadeIn, slideIn } from "../../utils";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -61,12 +62,26 @@ const Hero = () => {
       <div className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex md:flex-row flex-col items-start justify-between gap-5 `}>
         {/* bagian kiri */}
         <div className="w-full md:mt-24 mt-10 relative z-[5] flex flex-row gap-7">
-          <div className="flex flex-col justify-center items-center mt-5">
+          <motion.div
+            variants={fadeIn("right", "spring", 0.7, 1.5)} //fadein pertama
+            // variants={fadeIn2("down", 0.4)} //fadein kedua
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex flex-col justify-center items-center mt-5"
+          >
             <div className="w-5 h-5 rounded-full bg-[#4e4feb]" />
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
-          </div>
+          </motion.div>
           <div className="absolute inset-0 left-7">
-            <h1 className={`${styles.heroHeadText} text-white `}>
+            <motion.h1
+              variants={fadeIn("down", "tween", 0.2, 1.5)} //fadein pertama
+              // variants={fadeIn2("down", 0.4)} //fadein kedua
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className={`${styles.heroHeadText} text-white `}
+            >
               Hi, I'm{" "}
               <span className="text-gradient">
                 <span className="txt-rotate">
@@ -74,22 +89,43 @@ const Hero = () => {
                 </span>
                 <span className="ml-2 font-light">|</span>
               </span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("down", "tween", 0.3, 1.5)} //fadein pertama
+              // variants={fadeIn2("down", 0.4)} //fadein kedua
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className={`${styles.heroSubText} mt-2 text-white-100`}
+            >
               I develop 3D visuals, user <br className="sm:block hidden" />
               interfaces and web applications
-            </p>
+            </motion.p>
           </div>
         </div>
-        <div className="md:hidden block absolute top-56 xs:right-10 right-8">
+        <motion.div
+          variants={fadeIn("down", "tween", 0.4, 1.5)} //fadein pertama
+          // variants={fadeIn2("down", 0.4)} //fadein kedua
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="md:hidden block absolute top-56 xs:right-10 right-8 z-20"
+        >
           <ContactMe />
-        </div>
-        <div className="hidden md:block md:absolute xl:bottom-32 md:bottom-16 ml-7 z-10">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("down", "tween", 0.4, 1.5)} //fadein pertama
+          // variants={fadeIn2("down", 0.4)} //fadein kedua
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="hidden md:block md:absolute xl:bottom-32 md:bottom-16 ml-7 z-20"
+        >
           <ContactMe />
-        </div>
+        </motion.div>
 
         {/* bagian kanan */}
-        <div className={`h-[85vh] w-full flex ${styles.flexCenter}  relative z-10  md:left-16`}>
+        <div className={`h-[85vh] w-full flex ${styles.flexCenter}  relative z-10  md:left-16 `}>
           <img src={tangan2} alt="billing" className="absolute top-20-z-[1]" />
 
           <div className="absolute -z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-20 ${scrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
+    <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-50 ${scrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"

@@ -40,6 +40,9 @@ export default {
         "extra-bold": "800",
         black: "900",
       },
+      animation: {
+        "spin-slow": "spin 6s linear infinite",
+      },
     },
   },
   plugins: [],
