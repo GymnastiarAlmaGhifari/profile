@@ -107,35 +107,11 @@
   background-size: cover;
 }
 
-/* animate-spin-slow */
-/* .animate-spin-slow {
-  animation: spin 5s linear infinite;
-} */
-
-/* animate spin slow tidak searah jarumjam */
-
-/* .animate-spin-slow-ccw {
-  animation: spin-ccw 7s linear infinite;
-} */
-
-@keyframes spin-ccw {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
   }
 }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
