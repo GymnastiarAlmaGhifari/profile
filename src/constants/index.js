@@ -1,3 +1,5 @@
+import { github, facebook, instagram, linkedin } from "../assets";
+
 const navLinks = [
   {
     id: "about",
@@ -17,4 +19,27 @@ const navLinks = [
   },
 ];
 
-export { navLinks };
+const socialMedia = [
+  {
+    id: "github",
+    icon: github,
+    link: "",
+  },
+  {
+    id: "linkedin",
+    icon: linkedin,
+    link: "",
+  },
+  {
+    id: "instagram",
+    icon: instagram,
+    link: "",
+  },
+  {
+    id: "facebook",
+    icon: facebook,
+    link: "",
+  },
+];
+
+export { navLinks, socialMedia };
