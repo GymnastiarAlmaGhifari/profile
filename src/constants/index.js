@@ -23,22 +23,22 @@ const socialMedia = [
   {
     id: "github",
     icon: github,
-    link: "",
+    link: "#",
   },
   {
     id: "linkedin",
     icon: linkedin,
-    link: "",
+    link: "https://threejs.org/docs/#manual/en/introduction/Useful-links",
   },
   {
     id: "instagram",
     icon: instagram,
-    link: "",
+    link: "#",
   },
   {
     id: "facebook",
     icon: facebook,
-    link: "",
+    link: "#",
   },
 ];
 
