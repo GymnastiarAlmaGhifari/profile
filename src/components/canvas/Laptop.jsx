@@ -26,7 +26,7 @@ const Laptop = ({ isMobile }) => {
   windowMaterial.opacity = 0.7;
   windowMaterial.transparent = true;
 
-  const scale = isMobile ? 0.9 : 0.95;
+  const scale = isMobile ? 1 : 0.96;
   const position = isMobile ? [-0.199, 0.096, 0] : [-0.199, 0.096, 0];
 
   return (
@@ -83,6 +83,8 @@ const LaptopCanvas = () => {
       style={{
         cursor: "grab",
       }}
+      // make canvas canot slide with mouse right
+      onContextMenu={(e) => e.preventDefault()}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
