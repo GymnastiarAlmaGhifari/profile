@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section id="hero" className={`relative w-full h-screen mx-auto  `}>
       <div className="absolute z-[1] w-[23%] h-[20%] -ml-36 top-60 mt-20 rounded-full white__gradient_no_blur" />
-      <div className="absolute z-[2] w-[100%] h-[60%]  bottom-0 -mb-60 rounded-full black__gradient_no_blur" />
+      <div className="absolute z-[0] w-[100%] h-[60%]  bottom-0 -mb-60 rounded-full black__gradient_no_blur" />
       <div className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex md:flex-row flex-col items-start justify-between gap-5 `}>
         {/* bagian kiri */}
         <Introduction />

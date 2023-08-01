@@ -1,16 +1,14 @@
-import { styles } from "../../styles";
-import AboutImage from "../common/AboutImage";
+import ProfileImage from "../common/ProfileImage";
 import Overview from "../common/Overview";
+import { SectionWrapper } from "../../hoc";
 
 const About = () => {
   return (
-    <section id="about" className="h-[100vh] relative flex flex-col justify-center items-center z-20  mx-auto ">
-      <div className={`max-w-7xl mx-auto inset-0 absolute ${styles.paddingX} mt-20 flex flex-col md:flex-row items-center`}>
-        <AboutImage />
-        <Overview />
-      </div>
+    <section id="about" className="md:h-[60vh] h-[85vh] relative flex flex-col md:flex-row items-center gap-5 justify-between z-20 overflow-hidden  ">
+      <ProfileImage />
+      <Overview />
     </section>
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
