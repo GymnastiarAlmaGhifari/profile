@@ -1,29 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import SocialMedia from "./SocialMedia";
-import { styles } from "../../styles";
+import { styles } from "../../../styles";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils";
-// import { useState } from "react";
-// import { useEffect } from "react";
+import { fadeIn, textVariant } from "../../../utils";
 
 const Overview = () => {
-  // const [isAnimated, setIsAnimated] = useState(false);
-
-  // useEffect(() => {
-  //   // Tambahkan logika untuk memantau peristiwa scroll dan perbarui variabel state isAnimated
-  //   const handleScroll = () => {
-  //     const element = document.getElementById("overview"); // Ganti "overview" dengan ID elemen target Anda
-  //     if (element && !isAnimated && element.getBoundingClientRect().top < window.innerHeight) {
-  //       setIsAnimated(true);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [isAnimated]);
-
   return (
     <div className="w-full md:w-1/2  relative ">
       <motion.div
@@ -37,7 +18,7 @@ const Overview = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-white-200 text-[17px] max-w-3xl leading-[30px]">
+      <motion.p variants={fadeIn("", "", 0.3, 1)} className="mt-4 text-white-200 text-[17px] max-w-3xl leading-[30px]">
         I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable,
         and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>

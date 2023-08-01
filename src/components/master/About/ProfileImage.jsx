@@ -1,6 +1,6 @@
-import { agim } from "../../assets";
+import { agim } from "../../../assets";
 import { motion } from "framer-motion";
-import { slideIn } from "../../utils";
+import { slideIn } from "../../../utils";
 
 const ProfileImage = () => {
   return (

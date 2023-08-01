@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../../styles";
-import ContactMe from "../common/ContactMe";
-import { fadeIn } from "../../utils";
-import Introduction from "../common/Introduction";
-import RobotHand from "../common/RobotHand";
+import { styles } from "../../../styles";
+import ContactMe from "../../common/ContactMe";
+import { fadeIn } from "../../../utils";
+import Introduction from "./Introduction";
+import RobotHand from "./RobotHand";
 
 const Hero = () => {
   return (

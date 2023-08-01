@@ -1,6 +1,6 @@
-import ProfileImage from "../common/ProfileImage";
-import Overview from "../common/Overview";
-import { SectionWrapper } from "../../hoc";
+import ProfileImage from "./ProfileImage";
+import Overview from "./Overview";
+import { SectionWrapper } from "../../../hoc";
 
 const About = () => {
   return (

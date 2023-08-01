@@ -1,6 +1,6 @@
-import LaptopCanvas from "../canvas/Laptop";
-import { tangan2 } from "../../assets";
-import { styles } from "../../styles";
+import LaptopCanvas from "../../canvas/Laptop";
+import { tangan2 } from "../../../assets";
+import { styles } from "../../../styles";
 
 const RobotHand = () => {
   return (

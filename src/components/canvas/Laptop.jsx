@@ -31,19 +31,24 @@ const Laptop = ({ isMobile }) => {
 
   return (
     <group scale={scale} position={position} dispose={null}>
-      <pointLight intensity={1.3} angle={0.2} penumbra={1} position={[0, 3.4, 0]} />
+      {/* pointLight */}
+      <pointLight intensity={1.3} angle={0.2} penumbra={1} position={[0, 2.9, -1]} />
+      {/* HemisphereLight */}
+      <hemisphereLight intensity={3} groundColor="#f3f3f3" />
+
+      {/* <spotLight intensity={2} position={[-1.329, -1.22, -3.66]} />
+      <spotLight intensity={2} position={[-1.329, -1.22, 3.66]} /> */}
+
+      <spotLight target={nodes.Object_4} angle={Math.PI / 3} intensity={2} position={[0.29, 1.45, 0.019]} />
+      <directionalLight target={nodes.Object_4} angle={Math.PI / 3} intensity={2} position={[0.29, 1.45, 0.019]} />
+      <directionalLight position={[-5.921, -1.112, -0.133]} target={nodes.Object_4} angle={Math.PI / 4} intensity={1.2} />
+
       <mesh geometry={nodes.Object_4.geometry} material={materials.PaletteMaterial001} position={[-1.199, 0.096, 0]} rotation={[0, 0, -1.38]} />
       <mesh geometry={nodes.Object_7.geometry} material={windowMaterial} position={[-1.199, 0.096, 0]} rotation={[0, 0, -1.38]} />
       <mesh geometry={nodes.Object_10.geometry} material={materials.PaletteMaterial002} position={[-1.199, 0.096, 0]} rotation={[0, 0, -1.38]} />
       <mesh geometry={nodes.Object_14.geometry} material={materials["Material.009"]} />
       <mesh geometry={nodes.Object_16.geometry} material={materials["Material.010"]} />
-      {/* HemisphereLight */}
-      <hemisphereLight intensity={3} groundColor="black" />
-      {/* Front SpotLight */}
-      <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1.5} castShadow shadow-mapSize={1024} />
-      {/* Backlight */}
-      <spotLight position={[-20, -50, 10]} target={nodes.Object_4} angle={Math.PI / 4} intensity={1} />
-      {/* Additional Primitives or Components */}
+      {/* berikan pencahayaan */}
     </group>
   );
 };
@@ -86,6 +91,8 @@ const LaptopCanvas = () => {
       // make canvas canot slide with mouse right
       onContextMenu={(e) => e.preventDefault()}
     >
+      <ambientLight intensity={5} />
+
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
@@ -105,3 +112,22 @@ export default LaptopCanvas;
 
 useGLTF.preload("/laptop-transformed.glb");
 useLoader.preload(TextureLoader, "/window-laptop.png");
+
+{
+  /* <hemisphereLight intensity={3} groundColor="black" /> */
+}
+{
+  /* Front SpotLight */
+}
+{
+  /* <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1.5} castShadow shadow-mapSize={1024} /> */
+}
+{
+  /* Backlight */
+}
+{
+  /* <spotLight position={[20, -1, 1]} target={nodes.Object_4} angle={Math.PI / 4} intensity={1} /> */
+}
+{
+  /* Additional Primitives or Components */
+}

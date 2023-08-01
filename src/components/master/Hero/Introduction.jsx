@@ -2,8 +2,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { motion } from "framer-motion";
-import { fadeIn } from "../../utils";
-import { styles } from "../../styles";
+import { fadeIn } from "../../../utils";
+import { styles } from "../../../styles";
 import { useEffect, useState } from "react";
 
 const Introduction = () => {
