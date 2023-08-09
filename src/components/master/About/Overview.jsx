@@ -1,12 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import SocialMedia from "./SocialMedia";
+
 import { styles } from "../../../styles";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../../../utils";
+import ServiceCard from "../../common/Card";
+import { services } from "../../../constants";
 
 const Overview = () => {
   return (
-    <div className="w-full md:w-1/2  relative ">
+    <div className="w-full md:w-5/12  relative ">
       <motion.div
         // id="overview" // Berikan ID untuk elemen yang akan dianimasikan saat digulirkan
         className="relative"
@@ -22,7 +24,11 @@ const Overview = () => {
         I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable,
         and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
-      <SocialMedia />
+      <div className="mt-10 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { github, facebook, instagram, linkedin } from "../assets";
+import { github, facebook, instagram, linkedin, Tablet, Desktop } from "../assets";
 
 const navLinks = [
   {
@@ -23,23 +23,33 @@ const socialMedia = [
   {
     id: "github",
     icon: github,
-    link: "#",
+    link: "https://github.com/GymnastiarAlmaGhifari",
   },
   {
     id: "linkedin",
     icon: linkedin,
-    link: "https://threejs.org/docs/#manual/en/introduction/Useful-links",
+    link: "https://www.linkedin.com/in/agim-alma-4a7197277/",
   },
   {
     id: "instagram",
     icon: instagram,
-    link: "#",
+    link: "https://www.instagram.com/agimkipli/",
   },
   {
     id: "facebook",
     icon: facebook,
-    link: "#",
+    link: "https://www.facebook.com/agim.ghifari",
   },
 ];
 
-export { navLinks, socialMedia };
+const services = [
+  {
+    title: "Web Developer",
+    icon: Desktop,
+  },
+  {
+    title: "Web Manager",
+    icon: Tablet,
+  },
+];
+export { navLinks, socialMedia, services };

@@ -24,6 +24,7 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        tangan2: "url('/src/assets/tangan2.png')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

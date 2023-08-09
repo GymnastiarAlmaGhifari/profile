@@ -1,36 +1,20 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { styles } from "../../../styles";
 import { navLinks } from "../../../constants";
 import { logo } from "../../../assets";
 import { AnimatePresence, motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ isScrolled }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 75) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-50 ${scrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
+    <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-50 ${isScrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
+        <a
+          // href dengan id hero dengan
+          href="#hero"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -39,7 +23,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-20 h-9 object-contain" />
           <h1 className="md:text-2xl text-lg font-bold cursor-pointer flex mb-2">Gymnastiar Alma Ghifari </h1>
-        </Link>
+        </a>
 
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (

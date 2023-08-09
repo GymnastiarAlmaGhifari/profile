@@ -1,13 +1,19 @@
-import ProfileImage from "./ProfileImage";
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import Overview from "./Overview";
 import { SectionWrapper } from "../../../hoc";
+import RobotHand from "./RobotHand";
 
 const About = () => {
   return (
-    <section id="about" className="md:h-[60vh] h-[85vh] relative flex flex-col md:flex-row items-center gap-5 justify-between z-20 overflow-hidden  ">
-      <ProfileImage />
+    <div className="flex flex-col md:flex-row items-center gap-5 justify-between relative  md:snap-center">
+      {/* <ProfileImage /> */}
+      <RobotHand />
+
       <Overview />
-    </section>
+
+      {/* gunakan service card 2 saja */}
+    </div>
   );
 };
 

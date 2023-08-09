@@ -26,8 +26,8 @@ const Laptop = ({ isMobile }) => {
   windowMaterial.opacity = 0.7;
   windowMaterial.transparent = true;
 
-  const scale = isMobile ? 1 : 0.96;
-  const position = isMobile ? [-0.199, 0.096, 0] : [-0.199, 0.096, 0];
+  const scale = isMobile ? 1.7 : 1.85;
+  const position = isMobile ? [-0.199, -1.596, 0] : [-0.199, -1.65, 0];
 
   return (
     <group scale={scale} position={position} dispose={null}>
@@ -82,7 +82,7 @@ const LaptopCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, -5], fov: 25 }}
+      camera={{ position: [20, 0, -5], fov: 25 }}
       p
       gl={{ preserveDrawingBuffer: true }}
       style={{

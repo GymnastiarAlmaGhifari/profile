@@ -48,7 +48,6 @@ const BoxCanvas = ({ icon, link }) => {
         <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.7} />
         <Box imgUrl={icon} link={link} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

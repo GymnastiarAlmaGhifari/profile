@@ -4,15 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
-}
+} */
 
+.bungkus {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+}
+.bungkus::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

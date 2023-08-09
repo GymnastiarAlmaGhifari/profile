@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../../utils";
 import { styles } from "../../../styles";
 import { useEffect, useState } from "react";
+import SocialMedia from "./SocialMedia";
 
 const Introduction = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +13,7 @@ const Introduction = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Tester", "Web Developer", "Web Manager"];
+  const toRotate = ["Gymnastiar", "Web Developer", "Web Manager"];
   const period = 2000;
 
   useEffect(() => {
@@ -51,19 +52,21 @@ const Introduction = () => {
   };
 
   return (
-    <div className="w-full md:mt-24 mt-10 relative z-[5] flex flex-row gap-7">
+    <div className="w-full mb-28 relative z-[5] flex flex-row gap-7">
       <motion.div
         variants={fadeIn("right", "spring", 0.7, 1.5)} //fadein pertama
         // variants={fadeIn2("down", 0.4)} //fadein kedua
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex flex-col justify-center items-center mt-5"
+        className=""
       >
-        <div className="w-5 h-5 rounded-full bg-[#4e4feb]" />
-        <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        <SocialMedia />
+
+        {/* <div className="w-5 h-5 rounded-full bg-[#4e4feb]" />
+        <div className="w-1 sm:h-80 h-40 violet-gradient" /> */}
       </motion.div>
-      <div className="absolute inset-0 left-7">
+      <div className="inset-0 left-7">
         <motion.h1
           variants={fadeIn("down", "tween", 0.2, 1.5)} //fadein pertama
           // variants={fadeIn2("down", 0.4)} //fadein kedua
