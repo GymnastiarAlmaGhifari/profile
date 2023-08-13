@@ -83,7 +83,6 @@ const LaptopCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 0, -5], fov: 25 }}
-      p
       gl={{ preserveDrawingBuffer: true }}
       style={{
         cursor: "grab",

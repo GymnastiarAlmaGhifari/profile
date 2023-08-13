@@ -1,5 +1,11 @@
+import { SectionWrapper } from "../../hoc";
+
 const Project = () => {
-  return <div>Project</div>;
+  return (
+    <div className=" flex h-[75vh] items-center justify-center md:snap-center ">
+      <h1>iawdjiawdjiwajdij</h1>
+    </div>
+  );
 };
 
-export default Project;
+export default SectionWrapper(Project, "project");

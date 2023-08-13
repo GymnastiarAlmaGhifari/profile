@@ -59,7 +59,6 @@ const Introduction = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className=""
       >
         <SocialMedia />
 

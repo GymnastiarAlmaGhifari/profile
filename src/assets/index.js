@@ -14,5 +14,44 @@ import instagram from "./instagram.png";
 import facebook from "./facebook.png";
 import Desktop from "./Landing page of a marketing agency (1).jpg";
 import Tablet from "./Landing page of a marketing agency.jpg";
+import html from "./html.png";
+import css from "./css.png";
+import typescript from "./TS.png";
+import java from "./java.png";
+import Javascript from "./Javascript.png";
+import react from "./react.png";
+import reactDark from "./react-dark.png";
+import nextjs from "./nextjs.png";
+import mysql from "./mysql.png";
+import tailwind from "./tailwind-dark2.png";
+import laravel from "./laravel.png";
 
-export { logo, hand, tangan, tangan2, contactme, lingkaran, envelope, agim, github, linkedin, instagram, facebook, Desktop, Tablet, profile2, profile3 };
+export {
+  logo,
+  hand,
+  tangan,
+  tangan2,
+  contactme,
+  lingkaran,
+  envelope,
+  agim,
+  github,
+  linkedin,
+  instagram,
+  facebook,
+  Desktop,
+  Tablet,
+  profile2,
+  profile3,
+  typescript,
+  java,
+  nextjs,
+  mysql,
+  tailwind,
+  laravel,
+  react,
+  reactDark,
+  Javascript,
+  html,
+  css,
+};

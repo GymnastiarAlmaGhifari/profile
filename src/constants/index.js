@@ -1,4 +1,4 @@
-import { github, facebook, instagram, linkedin, Tablet, Desktop } from "../assets";
+import { github, facebook, instagram, linkedin, Tablet, Desktop, tailwind, nextjs, laravel, mysql, java, typescript, reactDark, Javascript, html, css } from "../assets";
 
 const navLinks = [
   {
@@ -52,4 +52,52 @@ const services = [
     icon: Tablet,
   },
 ];
-export { navLinks, socialMedia, services };
+
+const technologies = [
+  {
+    title: "HTML",
+    icon: html,
+  },
+  {
+    title: "CSS",
+    icon: css,
+  },
+  {
+    title: "Javascript",
+    icon: Javascript,
+  },
+  {
+    title: "Typescript",
+    icon: typescript,
+  },
+  {
+    title: "React",
+    icon: reactDark,
+  },
+  {
+    title: "NextJS",
+    icon: nextjs,
+  },
+  {
+    title: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    title: "Java",
+    icon: java,
+  },
+  {
+    title: "Laravel",
+    icon: laravel,
+  },
+  {
+    title: "MySQL",
+    icon: mysql,
+  },
+  {
+    title: "Tailwind",
+    icon: tailwind,
+  },
+];
+
+export { navLinks, socialMedia, services, technologies };
