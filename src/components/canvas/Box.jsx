@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, PerspectiveCamera, Preload, RenderTexture, Text, useTexture } from "@react-three/drei";
 import CanvasLoader from "../common/Loader";

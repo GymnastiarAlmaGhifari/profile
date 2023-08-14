@@ -25,6 +25,9 @@ import nextjs from "./nextjs.png";
 import mysql from "./mysql.png";
 import tailwind from "./tailwind-dark2.png";
 import laravel from "./laravel.png";
+import nodejs from "./nodejs.png";
+import prisma from "./prisma.png";
+import git from "./git.png";
 
 export {
   logo,
@@ -54,4 +57,7 @@ export {
   Javascript,
   html,
   css,
+  nodejs,
+  prisma,
+  git,
 };

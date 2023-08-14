@@ -42,14 +42,6 @@ const Coin = (props) => {
         <circleGeometry args={[1, 32]} /> {/* 32 segments for a smooth circle */}
         <meshBasicMaterial map={icon} /> {/* Set the color of the circle */}
       </mesh>
-      {/* <mesh position={[0, -0.128, 0.01]} rotation={[0, 0, 0]} scale={[0.1, 0.1, 1]}>
-        <Text fontSize={0.5} color="#FF0000">
-          Next js
-        </Text>
-      </mesh> */}
-
-      {/* buatkan lagi seperti diatas dengan hadapan yang beda */}
-
       <mesh position={[0, -0.068, -0.01]} rotation={[0, Math.PI, 0]} scale={[0.1, 0.1, 1]}>
         <Text fontSize={0.5} color="#FFFFFF">
           {props.title}

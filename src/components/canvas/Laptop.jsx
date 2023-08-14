@@ -111,22 +111,3 @@ export default LaptopCanvas;
 
 useGLTF.preload("/laptop-transformed.glb");
 useLoader.preload(TextureLoader, "/window-laptop.png");
-
-{
-  /* <hemisphereLight intensity={3} groundColor="black" /> */
-}
-{
-  /* Front SpotLight */
-}
-{
-  /* <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1.5} castShadow shadow-mapSize={1024} /> */
-}
-{
-  /* Backlight */
-}
-{
-  /* <spotLight position={[20, -1, 1]} target={nodes.Object_4} angle={Math.PI / 4} intensity={1} /> */
-}
-{
-  /* Additional Primitives or Components */
-}

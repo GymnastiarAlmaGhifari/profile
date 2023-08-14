@@ -27,7 +27,7 @@ const ProfileImage = () => {
       initial="hidden"
       animate="show"
       exit="hidden"
-      className="relative z-20 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[600px] md:h-[500px] rounded-full bg-[rgba(0,0,0,0.5)] overflow-hidden flex justify-center items-center md:rounded-xl group bottom-4 md:bottom-0"
+      className="relative z-20 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[600px] md:h-[500px] rounded-full bg-[rgba(0,0,0,0.5)] overflow-hidden flex justify-center items-center md:rounded-xl group md:bottom-0"
     >
       <div className="absolute w-full h-full bg-gradient-to-r from-secondary via-secondary to-transparent -top-[50%] -left-[50%] animate-spin-slow origin-bottom-right   group-hover:pause"></div>
       <div className="absolute w-full h-full bg-gradient-to-r from-secondary via-secondary to-transparent -top-[50%] -left-[50%] animate-spin-delay origin-bottom-right group-hover:pause"></div>

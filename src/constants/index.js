@@ -1,4 +1,4 @@
-import { github, facebook, instagram, linkedin, Tablet, Desktop, tailwind, nextjs, laravel, mysql, java, typescript, reactDark, Javascript, html, css } from "../assets";
+import { github, facebook, instagram, linkedin, Tablet, Desktop, tailwind, nextjs, laravel, mysql, java, typescript, reactDark, Javascript, html, css, nodejs, prisma, git } from "../assets";
 
 const navLinks = [
   {
@@ -35,11 +35,11 @@ const socialMedia = [
     icon: instagram,
     link: "https://www.instagram.com/agimkipli/",
   },
-  {
-    id: "facebook",
-    icon: facebook,
-    link: "https://www.facebook.com/agim.ghifari",
-  },
+  // {
+  //   id: "facebook",
+  //   icon: facebook,
+  //   link: "https://www.facebook.com/agim.ghifari",
+  // },
 ];
 
 const services = [
@@ -54,26 +54,26 @@ const services = [
 ];
 
 const technologies = [
-  {
-    title: "HTML",
-    icon: html,
-  },
-  {
-    title: "CSS",
-    icon: css,
-  },
-  {
-    title: "Javascript",
-    icon: Javascript,
-  },
+  // {
+  //   title: "HTML",
+  //   icon: html,
+  // },
+  // {
+  //   title: "CSS",
+  //   icon: css,
+  // },
+  // {
+  //   title: "Javascript",
+  //   icon: Javascript,
+  // },
   {
     title: "Typescript",
     icon: typescript,
   },
-  {
-    title: "React",
-    icon: reactDark,
-  },
+  // {
+  //   title: "React",
+  //   icon: reactDark,
+  // },
   {
     title: "NextJS",
     icon: nextjs,
@@ -91,12 +91,20 @@ const technologies = [
     icon: laravel,
   },
   {
-    title: "MySQL",
-    icon: mysql,
+    title: "NodeJS",
+    icon: nodejs,
   },
   {
-    title: "Tailwind",
-    icon: tailwind,
+    title: "Git",
+    icon: git,
+  },
+  {
+    title: "Prisma",
+    icon: prisma,
+  },
+  {
+    title: "MySQL",
+    icon: mysql,
   },
 ];
 

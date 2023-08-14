@@ -28,7 +28,7 @@ const Hero = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="md:hidden block absolute bottom-50 xs:right-10 right-8 z-20"
+          className="md:hidden block absolute top-72 xs:right-10 right-8 z-20"
         >
           <ContactMe />
         </motion.div>
