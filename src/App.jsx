@@ -1,11 +1,11 @@
 import Navbar from "./components/master/Navbar";
 import About from "./components/master/About";
-import Project from "./components/master/Project";
 import Contact from "./components/master/Contact";
 import Footer from "./components/master/Footer";
 import Hero from "./components/master/Hero";
 import { useRef, useState, useEffect } from "react";
-import Skill from "./components/master/Skill/Skill";
+import Skill from "./components/master/Skill";
+import Project from "./components/master/Project";
 
 const App = () => {
   const bungkusRef = useRef(null);

@@ -14,7 +14,7 @@ const Skill = () => {
       <div className="flex flex-col">
         <motion.div className="relative text-center" variants={textVariant(0.3)}>
           <p className={styles.sectionSubText}>What i have learned so far</p>
-          <h2 className={styles.sectionHeadText}>Tech Experience</h2>
+          <h2 className={styles.sectionHeadText}>Tech Experience.</h2>
         </motion.div>
       </div>
       <div className="flex flex-row gap-9 w-full flex-wrap justify-center items-center">
