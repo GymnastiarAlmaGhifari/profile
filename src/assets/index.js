@@ -28,6 +28,14 @@ import laravel from "./laravel.png";
 import nodejs from "./nodejs.png";
 import prisma from "./prisma.png";
 import git from "./git.png";
+import tokoberkah from "./tokoberkah.png";
+import tolonto from "./tolonto.png";
+import laravel_bimbel_linear from "./laravel_bimbel_linear.png";
+import madiun from "./Madiun.png";
+import rhizoma from "./rhizoma.png";
+import mern from "./mern.png";
+import t3stack_credential from "./t3stack role credential login.png";
+import bimbel_linear from "./bimbel_linear.png";
 
 export {
   logo,
@@ -60,4 +68,12 @@ export {
   nodejs,
   prisma,
   git,
+  laravel_bimbel_linear,
+  tokoberkah,
+  tolonto,
+  madiun,
+  rhizoma,
+  mern,
+  t3stack_credential,
+  bimbel_linear,
 };

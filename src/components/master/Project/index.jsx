@@ -6,8 +6,8 @@ import Carousel from "./Carousel";
 
 const Project = () => {
   return (
-    <div className="flex flex-col lg:h-[75vh] items-center gap-20 justify-center relative  md:snap-center">
-      <div className="flex flex-col lg:text-center">
+    <div className="flex flex-col lg:h-screen items-center  gap-10 justify-center relative  md:snap-center">
+      <div className="flex flex-col lg:text-center lg:mt-10 h-fit">
         <motion.div className="relative" variants={textVariant(0.3)}>
           <p className={styles.sectionSubText}>my work</p>
           <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -17,8 +17,7 @@ const Project = () => {
           problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 w-full ">
-        {/* Ganti ini dengan CustomCarousel */}
+      <div className=" w-full ">
         <Carousel />
       </div>
     </div>
