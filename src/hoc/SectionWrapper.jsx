@@ -4,7 +4,7 @@ import { styles } from "../styles";
 
 import { staggerContainer } from "../utils";
 
-const StarWrapper = (Component, idName) =>
+const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
       <motion.section variants={staggerContainer()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.padding} max-w-7xl mx-auto relative z-[3]`}>
@@ -17,4 +17,4 @@ const StarWrapper = (Component, idName) =>
     );
   };
 
-export default StarWrapper;
+export default SectionWrapper;

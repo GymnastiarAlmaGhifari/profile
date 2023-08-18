@@ -9,6 +9,32 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = ({ isScrolled }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  // diteksi ketika berada pada id hero
+  useEffect(() => {
+    const changeLinkColor = () => {
+      if (window.scrollY >= 0 && window.scrollY < 700) {
+        setActive("Home");
+      } else if (window.scrollY >= 700 && window.scrollY < 1500) {
+        setActive("About");
+      } else if (window.scrollY >= 1500 && window.scrollY < 2500) {
+        setActive("Skill");
+      } else if (window.scrollY >= 2500 && window.scrollY < 3500) {
+        setActive("Project");
+      } else if (window.scrollY >= 3500) {
+        setActive("Contact");
+      }
+    };
+
+    window.addEventListener("scroll", changeLinkColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeLinkColor);
+    };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-50 ${isScrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -89,63 +115,6 @@ const Navbar = ({ isScrolled }) => {
         </AnimatePresence>
       </div>
     </nav>
-    // <nav className={`${scrolled ? "bg-primary shadow-md" : "bg-transparent"}  fixed w-full z-50 transition-all duration-500 ease-in-out`}>
-    //   <div className={`${styles.paddingX} py-5 container mx-auto  flex justify-between items-center`}>
-    //     <div className="flex items-center">
-    //       <Link
-    //         to="/"
-    //         className="flex items-center gap-2"
-    //         onClick={() => {
-    //           setActive("");
-    //           window.scrollTo(0, 0);
-    //         }}
-    //       >
-    //         <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-    //         <h1 className="text-xl font-bold text-qwerty">Gymnastiar Alma Ghifari</h1>
-    //       </Link>
-    //     </div>
-    //     <div className="hidden md:block">
-    //       <ul className="flex items-center">
-    //         {navLinks.map((link) => (
-    //           <li key={link.id} className="ml-8">
-    //             <Link to={`/${link.id}`} className={`${active === link.id ? "text-qwerty" : "text-gray-400"} hover:text-qwerty transition-all duration-500 ease-in-out`} onClick={() => setActive(link.id)}>
-    //               {link.title}
-    //             </Link>
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     </div>
-    //     <div className="md:hidden">
-    //       <button className="focus:outline-none" onClick={() => setToggle(!toggle)}>
-    //         {toggle ? (
-    //           <img src="https://res.cloudinary.com/dk9fdcnnp/image/upload/v1628584756/Portfolio/close_qwerty.png" alt="close" className="w-6 h-6" />
-    //         ) : (
-    //           <img src="https://res.cloudinary.com/dk9fdcnnp/image/upload/v1628584756/Portfolio/menu_qwerty.png" alt="menu" className="w-6 h-6" />
-    //         )}
-    //       </button>
-    //     </div>
-    //   </div>
-    //   {toggle && (
-    //     <div className="md:hidden">
-    //       <ul className="bg-primary">
-    //         {navLinks.map((link) => (
-    //           <li key={link.id} className="py-4 px-8">
-    //             <Link
-    //               to={`/${link.id}`}
-    //               className={`${active === link.id ? "text-qwerty" : "text-gray-400"} hover:text-qwerty transition-all duration-500 ease-in-out`}
-    //               onClick={() => {
-    //                 setActive(link.id);
-    //                 setToggle(false);
-    //               }}
-    //             >
-    //               {link.title}
-    //             </Link>
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     </div>
-    //   )}
-    // </nav>
   );
 };
 
