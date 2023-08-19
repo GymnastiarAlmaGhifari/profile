@@ -6,7 +6,6 @@ const ContactMe = () => (
     <img src={lingkaran} className="w-full h-full left-0.5 object-contain absolute " />
     <div className={`${styles.flexCenter} relative`}>
       <img src={contactme} alt="arrow-up" className="w-[80%] object-contain animate-spin-slow" />
-      {/* Center the envelope image */}
       <img src={envelope} alt="envelope" className="absolute group-hover:scale-110  transition-all duration-500" />
     </div>
   </a>

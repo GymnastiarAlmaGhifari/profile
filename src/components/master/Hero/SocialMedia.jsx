@@ -12,7 +12,7 @@ const SocialMedia = () => {
             <BoxCanvas icon={social.icon} link={social.link} />
           </div>
         ))}
-      </motion.div>{" "}
+      </motion.div>
     </div>
   );
 };

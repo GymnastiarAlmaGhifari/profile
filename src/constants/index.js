@@ -1,6 +1,5 @@
 import {
   //import image
-  github,
   facebook,
   instagram,
   linkedin,
@@ -12,10 +11,6 @@ import {
   mysql,
   java,
   typescript,
-  reactDark,
-  Javascript,
-  html,
-  css,
   nodejs,
   prisma,
   git,

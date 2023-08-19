@@ -1,12 +1,11 @@
-import Navbar from "./components/master/Navbar";
-import About from "./components/master/About";
-import Contact from "./components/master/Contact";
-import Footer from "./components/master/Footer";
+import Navbar from "./components/master/Navbar/Index";
 import Hero from "./components/master/Hero";
-import { useRef, useState, useEffect } from "react";
+import About from "./components/master/About";
 import Skill from "./components/master/Skill";
 import Project from "./components/master/Project";
+import Contact from "./components/master/Contact";
 import StarsCanvas from "./components/canvas/Stars";
+import { useRef, useState, useEffect } from "react";
 
 const App = () => {
   const bungkusRef = useRef(null);

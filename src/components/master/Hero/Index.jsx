@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../../../styles";
 import ContactMe from "../../common/ContactMe";
 import { fadeIn } from "../../../utils";
@@ -22,25 +21,11 @@ const Hero = () => {
         <ProfileImage />
 
         {/* ContactMe Start  */}
-        <motion.div
-          variants={fadeIn("down", "tween", 0.4, 1.5)} //fadein pertama
-          // variants={fadeIn2("down", 0.4)} //fadein kedua
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="md:hidden block absolute top-72 xs:right-10 right-8 z-20"
-        >
+        <motion.div variants={fadeIn("down", "tween", 0.4, 1.5)} initial="hidden" animate="show" exit="hidden" className="md:hidden block absolute top-72 xs:right-10 right-8 z-20">
           <ContactMe />
         </motion.div>
 
-        <motion.div
-          variants={fadeIn("down", "tween", 0.4, 1.5)} //fadein pertama
-          // variants={fadeIn2("down", 0.4)} //fadein kedua
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="hidden md:block md:absolute  md:bottom-12  xl:bottom-28  ml-32 z-20"
-        >
+        <motion.div variants={fadeIn("down", "tween", 0.4, 1.5)} initial="hidden" animate="show" exit="hidden" className="hidden md:block md:absolute  md:bottom-12  xl:bottom-28  ml-32 z-20">
           <ContactMe />
         </motion.div>
         {/* ContactMe End  */}

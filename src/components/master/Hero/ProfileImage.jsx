@@ -13,7 +13,7 @@ const ProfileImage = () => {
     const interval = setInterval(() => {
       setPreviousImageIndex(currentImageIndex);
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [currentImageIndex]);
@@ -22,8 +22,7 @@ const ProfileImage = () => {
   const previousImage = images[previousImageIndex];
   return (
     <motion.div
-      variants={fadeIn("left", "spring", 0.7, 1.5)} //fadein pertama
-      // variants={fadeIn2("down", 0.4)} //fadein kedua
+      variants={fadeIn("left", "spring", 0.7, 1.5)}
       initial="hidden"
       animate="show"
       exit="hidden"
@@ -39,9 +38,9 @@ const ProfileImage = () => {
             src={previousImage}
             alt="About Us"
             className="absolute top-0 left-0 w-full h-full object-cover"
-            initial={previousImageIndex === currentImageIndex ? { y: 0 } : { y: "-100%" }} // Start from the top (visible) if first rotation, else hidden
-            animate={previousImageIndex === currentImageIndex ? { y: 0 } : { y: "100%" }} // Slide down and fade out if first rotation, else hidden
-            exit={{ y: 0 }} // Return to the top (visible) during exit
+            initial={previousImageIndex === currentImageIndex ? { y: 0 } : { y: "-100%" }}
+            animate={previousImageIndex === currentImageIndex ? { y: 0 } : { y: "100%" }}
+            exit={{ y: 0 }}
             transition={{ duration: 0.5 }}
           />
           <motion.img
@@ -49,7 +48,7 @@ const ProfileImage = () => {
             src={currentImage}
             alt="About Us"
             className="absolute top-0 left-0 w-full h-full object-cover"
-            initial={{ y: "-100%" }} // Start from the top (hidden)
+            initial={{ y: "-100%" }}
             animate={{ y: 0 }} // Slide in from the top and fade in
             exit={{ y: "-100%" }} // Slide up and fade out during exit
             transition={{ duration: 0.5 }}

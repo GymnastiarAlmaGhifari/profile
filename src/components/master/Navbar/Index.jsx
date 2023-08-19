@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
-import { styles } from "../../../styles";
+import { useState } from "react";
 import { navLinks } from "../../../constants";
 import { logo } from "../../../assets";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,31 +7,6 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = ({ isScrolled }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
-  // diteksi ketika berada pada id hero
-  useEffect(() => {
-    const changeLinkColor = () => {
-      if (window.scrollY >= 0 && window.scrollY < 700) {
-        setActive("Home");
-      } else if (window.scrollY >= 700 && window.scrollY < 1500) {
-        setActive("About");
-      } else if (window.scrollY >= 1500 && window.scrollY < 2500) {
-        setActive("Skill");
-      } else if (window.scrollY >= 2500 && window.scrollY < 3500) {
-        setActive("Project");
-      } else if (window.scrollY >= 3500) {
-        setActive("Contact");
-      }
-    };
-
-    window.addEventListener("scroll", changeLinkColor);
-
-    return () => {
-      window.removeEventListener("scroll", changeLinkColor);
-    };
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <nav className={`w-full flex items-center py-5 px-4 fixed top-0 z-50 ${isScrolled ? "bg-primary/90 border-b-[2px] border-secondary/80 backdrop-blur" : "bg-transparent"}`}>
