@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { styles } from "../../../styles";
 import ContactMe from "../../common/ContactMe";
 import { fadeIn } from "../../../utils";
+import Introduction from "./Introduction";
+import ProfileImage from "./ProfileImage";
 
 const Hero = () => {
   return (
@@ -13,10 +15,10 @@ const Hero = () => {
       </div>
       <div className={`absolute inset-0 top-[90px] max-w-7xl mx-auto ${styles.paddingX} flex md:flex-row flex-col  items-center justify-center md:justify-between gap-2 `}>
         {/* bagian kiri */}
-        {/* <Introduction /> */}
+        <Introduction />
 
         {/* bagian kanan */}
-        {/* <ProfileImage /> */}
+        <ProfileImage />
 
         {/* ContactMe Start  */}
         <motion.div variants={fadeIn("down", "tween", 0.4, 1.5)} initial="hidden" animate="show" exit="hidden" className="md:hidden block absolute top-72 xs:right-10 right-8 z-20">

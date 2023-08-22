@@ -1,5 +1,5 @@
 import Navbar from "./components/master/Navbar/Index";
-import Hero from "./components/master/Hero";
+import Hero from "./components/master/Hero/Index";
 import About from "./components/master/About";
 import Skill from "./components/master/Skill";
 import Project from "./components/master/Project";
