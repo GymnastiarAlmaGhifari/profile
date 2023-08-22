@@ -1,9 +1,9 @@
-FROM node:alpine
+FROM node:lts
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm i
-RUN npm run build
 COPY . .
-RUN npm run preview
+RUN npm run build
+ENTRYPOINT [ "npm", "run", "preview" ]
