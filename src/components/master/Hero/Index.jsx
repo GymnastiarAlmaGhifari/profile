@@ -18,7 +18,7 @@ const Hero = () => {
         <Introduction />
 
         {/* bagian kanan */}
-        <ProfileImage />
+        {/* <ProfileImage /> */}
 
         {/* ContactMe Start  */}
         <motion.div variants={fadeIn("down", "tween", 0.4, 1.5)} initial="hidden" animate="show" exit="hidden" className="md:hidden block absolute top-72 xs:right-10 right-8 z-20">
