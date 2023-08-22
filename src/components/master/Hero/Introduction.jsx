@@ -67,7 +67,7 @@ const Introduction = () => {
         </motion.h1>
         <motion.p variants={fadeIn("down", "tween", 0.3, 1.5)} initial="hidden" animate="show" exit="hidden" className={`${styles.heroSubText} mt-2`}>
           I develop 3D visuals, user <br className="sm:block hidden" />
-          interfaces and web applications
+          interfaces and web appications
         </motion.p>
       </div>
     </div>
