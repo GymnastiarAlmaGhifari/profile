@@ -1,9 +1,9 @@
 import Navbar from "./components/master/Navbar/Index";
 import Hero from "./components/master/Hero/Index";
-import About from "./components/master/About";
-import Skill from "./components/master/Skill";
-import Project from "./components/master/Project";
-import Contact from "./components/master/Contact";
+import About from "./components/master/About/Index";
+import Skill from "./components/master/Skill/index";
+import Project from "./components/master/Project/index";
+import Contact from "./components/master/Contact/index";
 import StarsCanvas from "./components/canvas/Stars";
 import { useRef, useState, useEffect } from "react";
 
