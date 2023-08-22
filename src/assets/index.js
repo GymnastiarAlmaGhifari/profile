@@ -18,7 +18,7 @@ import html from "./html.png";
 import css from "./css.png";
 import typescript from "./TS.png";
 import java from "./java.png";
-import Javascript from "./Javascript.png";
+import Javascript from "./javascript.png";
 import react from "./react.png";
 import reactDark from "./react-dark.png";
 import nextjs from "./nextjs.png";
