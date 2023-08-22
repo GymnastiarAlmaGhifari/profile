@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       <div className={`absolute inset-0 top-[90px] max-w-7xl mx-auto ${styles.paddingX} flex md:flex-row flex-col  items-center justify-center md:justify-between gap-2 `}>
         {/* bagian kiri */}
-        <Introduction />
+        {/* <Introduction /> */}
 
         {/* bagian kanan */}
         {/* <ProfileImage /> */}

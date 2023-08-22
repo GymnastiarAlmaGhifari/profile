@@ -5,7 +5,7 @@ import RobotHand from "./RobotHand";
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-5 justify-between   md:snap-center">
-      <RobotHand />
+      {/* <RobotHand /> */}
 
       <Overview />
     </div>
