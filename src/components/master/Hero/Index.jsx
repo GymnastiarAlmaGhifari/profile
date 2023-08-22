@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { styles } from "../../../styles";
 import ContactMe from "../../common/ContactMe";
 import { fadeIn } from "../../../utils";
-import Introduction from "./Introduction";
-import ProfileImage from "./ProfileImage";
 
 const Hero = () => {
   return (
