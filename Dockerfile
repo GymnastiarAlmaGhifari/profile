@@ -6,4 +6,5 @@ COPY package.json package-lock.json ./
 RUN npm i
 COPY . .
 RUN npm run build
-ENTRYPOINT [ "npm", "run", "preview" ]
+EXPOSE 4173
+ENTRYPOINT [ "npm", "run", "preview", "--", "--host" ]
