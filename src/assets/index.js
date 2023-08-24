@@ -1,47 +1,38 @@
-import logo from "./logo-no-background.png";
-import hand from "./hand.png";
-import tangan from "./tangan.png";
-import tangan2 from "./tangan2.png";
-import contactme from "./ContactMe.png";
-import lingkaran from "./lingkaran-biru.png";
-import envelope from "./envelope.png";
-import agim from "./profile.jpg";
-import profile2 from "./profile2.jpg";
-import profile3 from "./profile3.jpg";
-import github from "./github.png";
-import linkedin from "./linkedin.png";
-import instagram from "./instagram.png";
-import facebook from "./facebook.png";
-import Desktop from "./Landing page of a marketing agency (1).jpg";
-import Tablet from "./Landing page of a marketing agency.jpg";
-import html from "./html.png";
-import css from "./css.png";
-import typescript from "./TS.png";
-import java from "./java.png";
-import Javascript from "./javascript.png";
-import react from "./react.png";
-import reactDark from "./react-dark.png";
-import nextjs from "./nextjs.png";
-import mysql from "./mysql.png";
-import tailwind from "./tailwind-dark2.png";
-import laravel from "./laravel.png";
-import nodejs from "./nodejs.png";
-import prisma from "./prisma.png";
-import git from "./git.png";
-import tokoberkah from "./tokoberkah.png";
-import tolonto from "./tolonto.png";
-import laravel_bimbel_linear from "./laravel_bimbel_linear.png";
-import madiun from "./Madiun.png";
-import rhizoma from "./rhizoma.png";
-import mern from "./mern.png";
-import t3stack_credential from "./t3stack role credential login.png";
-import bimbel_linear from "./bimbel_linear.png";
+import logo from "./logo-no-background.webp";
+import tangan from "./tangan.webp";
+import contactme from "./ContactMe.webp";
+import lingkaran from "./lingkaran-biru.webp";
+import envelope from "./envelope.webp";
+import agim from "./profile.webp";
+import profile2 from "./profile2.webp";
+import profile3 from "./profile3.webp";
+import github from "./github.webp";
+import linkedin from "./linkedin.webp";
+import instagram from "./instagram.webp";
+import facebook from "./facebook.webp";
+import Desktop from "./Landing page of a marketing agency (1).webp";
+import Tablet from "./Landing page of a marketing agency.webp";
+import typescript from "./TS.webp";
+import java from "./java.webp";
+import nextjs from "./nextjs.webp";
+import mysql from "./mysql.webp";
+import tailwind from "./tailwind.webp";
+import laravel from "./laravel.webp";
+import nodejs from "./nodejs.webp";
+import prisma from "./prisma.webp";
+import git from "./git.webp";
+import tokoberkah from "./tokoberkah.webp";
+import tolonto from "./tolonto.webp";
+import laravel_bimbel_linear from "./laravel_bimbel_linear.webp";
+import madiun from "./Madiun.webp";
+import rhizoma from "./rhizoma.webp";
+import mern from "./mern.webp";
+import t3stack_credential from "./t3stack role credential login.webp";
+import bimbel_linear from "./bimbel_linear.webp";
 
 export {
   logo,
-  hand,
   tangan,
-  tangan2,
   contactme,
   lingkaran,
   envelope,
@@ -60,11 +51,6 @@ export {
   mysql,
   tailwind,
   laravel,
-  react,
-  reactDark,
-  Javascript,
-  html,
-  css,
   nodejs,
   prisma,
   git,

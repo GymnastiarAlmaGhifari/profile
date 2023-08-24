@@ -23,8 +23,8 @@ export default {
         xl: "1280px", // Default: 1280px
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-        tangan2: "url('/src/assets/tangan2.png')",
+        "hero-pattern": "url('/src/assets/herobg.webp')",
+        tangan2: "url('/src/assets/tangan.png')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

@@ -90,7 +90,7 @@ const Carousel = () => {
     ],
   };
   return (
-    <motion.div className="w-full" variants={fadeIn("up", "spring", 0.2, 1)}>
+    <motion.div className="w-full" variants={fadeIn("up", "tween", 0.2, 1)}>
       <Slider {...settings}>
         {projects.map((project, index) => (
           <div key={index} className="py-2">

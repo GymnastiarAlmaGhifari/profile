@@ -1,5 +1,5 @@
 import LaptopCanvas from "../../canvas/Laptop";
-import { tangan2 } from "../../../assets";
+import { tangan } from "../../../assets";
 import { styles } from "../../../styles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../utils";
@@ -7,7 +7,7 @@ import { fadeIn } from "../../../utils";
 const RobotHand = () => {
   return (
     <div className={`w-full md:w-1/2  ${styles.flexCenter}  relative z-10 `}>
-      <motion.img variants={fadeIn("up", "tween", 0.2, 1)} src={tangan2} alt="billing" className="w-full top-20 -z-[1]" />
+      <motion.img variants={fadeIn("up", "tween", 0.2, 1)} src={tangan} alt="billing" className="w-full top-20 -z-[1]" />
 
       <div className="absolute -z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
       <div className="absolute -z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
