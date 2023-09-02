@@ -4,7 +4,7 @@ import About from "./components/master/About/Index";
 import Skill from "./components/master/Skill/index";
 import Project from "./components/master/Project/index";
 import Contact from "./components/master/Contact/index";
-import StarsCanvas from "./components/canvas/Stars";
+// import StarsCanvas from "./components/canvas/Stars";
 import { useRef, useState, useEffect } from "react";
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
       <Project />
       <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
       </div>
     </div>
   );
