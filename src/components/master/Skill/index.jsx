@@ -1,6 +1,6 @@
 import { SectionWrapper } from "../../../hoc";
-// import CoinCanvas from "../../canvas/Coin";
-// import { technologies } from "../../../constants";
+import CoinCanvas from "../../canvas/Coin";
+import { technologies } from "../../../constants";
 import { styles } from "../../../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../../../utils";
@@ -18,11 +18,11 @@ const Skill = () => {
         </motion.div>
       </div>
       <div className="flex flex-row gap-9 w-full flex-wrap justify-center items-center">
-        {/* {technologies.map((technology, index) => (
+        {technologies.map((technology, index) => (
           <div className="w-28 h-28 md:w-40 md:h-40 cursor-grab" key={technology.title}>
             <CoinCanvas index={index} {...technology} />
           </div>
-        ))} */}
+        ))}
       </div>
     </div>
   );
