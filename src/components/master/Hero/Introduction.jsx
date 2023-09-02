@@ -53,7 +53,7 @@ const Introduction = () => {
   return (
     <div className="w-full mb-28 relative z-[5] flex flex-row gap-7">
       <motion.div variants={fadeIn("right", "spring", 0.7, 1.5)} initial="hidden" animate="show" exit="hidden" className="">
-        <SocialMedia />
+        {/* <SocialMedia /> */}
       </motion.div>
       <div className="inset-0 left-7">
         <motion.h1 variants={fadeIn("down", "tween", 0.2, 1.5)} initial="hidden" animate="show" exit="hidden" className={`${styles.heroHeadText} text-white `}>
