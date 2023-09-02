@@ -12,7 +12,7 @@ import {
   java,
   typescript,
   nodejs,
-  prisma,
+  // prisma,
   git,
   rhizoma,
   tolonto,
@@ -121,10 +121,10 @@ const technologies = [
     title: "Git",
     icon: git,
   },
-  {
-    title: "Prisma",
-    icon: prisma,
-  },
+  // {
+  //   title: "Prisma",
+  //   icon: prisma,
+  // },
   {
     title: "MySQL",
     icon: mysql,
