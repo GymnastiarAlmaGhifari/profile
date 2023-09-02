@@ -101,10 +101,10 @@ const technologies = [
     title: "NextJS",
     icon: nextjs,
   },
-  {
-    title: "Tailwind",
-    icon: tailwind,
-  },
+  // {
+  //   title: "Tailwind",
+  //   icon: tailwind,
+  // },
   {
     title: "Java",
     icon: java,
@@ -117,10 +117,10 @@ const technologies = [
     title: "NodeJS",
     icon: nodejs,
   },
-  {
-    title: "Git",
-    icon: git,
-  },
+  // {
+  //   title: "Git",
+  //   icon: git,
+  // },
   // {
   //   title: "Prisma",
   //   icon: prisma,
