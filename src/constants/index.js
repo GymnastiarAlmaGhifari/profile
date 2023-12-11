@@ -5,7 +5,7 @@ import {
   linkedin,
   Tablet,
   Desktop,
-  tailwind,
+  // tailwind,
   nextjs,
   laravel,
   mysql,
@@ -13,7 +13,7 @@ import {
   typescript,
   nodejs,
   // prisma,
-  git,
+  // git,
   rhizoma,
   tolonto,
   madiun,
@@ -51,7 +51,7 @@ const socialMedia = [
   {
     id: "linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/agim-alma-4a7197277/",
+    link: "https://www.linkedin.com/in/gymnastiar-ghifari-4a7197277/",
   },
   {
     id: "instagram",
